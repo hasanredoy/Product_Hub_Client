@@ -1,15 +1,22 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { updateProfile } from "firebase/auth";
 
 import { AuthContext } from "../../authProvider/AuthProvider";
 import usePostImage from "../../hooks/usePostImage";
 import useAxios from "../../hooks/useAxios";
+import react from 'react';
+
+import swal from '@sweetalert/with-react'
+ 
+
 const Register = () => {
 
   const {createUser ,updateUserProfile} = useContext(AuthContext)
   const [photo,setPhoto]=useState([])
+  // import navigate hook 
+  const navigate  = useNavigate()
   
   // get axis hook
   const axiosHookCommon = useAxios() 
@@ -40,7 +47,29 @@ const Register = () => {
     .then(res=>{
       console.log(res.data);
       if(res.data?.insertedId){
-        alert("user created")
+        swal(
+          <div>
+            <h1 className=" text-lg font-bold">Registered Successfully</h1>
+            <p>
+             Welcome to <span className=" text-primary-light">Product Hub</span>!
+            </p>
+          </div>
+        )
+        setTimeout(() => {
+          navigate('/')
+        }, 800);
+      }
+      if(res.data?.insertedId==null){
+        swal(
+          <div>
+            <h1 className=" text-lg font-bold text-red-600">User already exist..</h1>
+            <p>
+            please login !            </p>
+          </div>
+        )
+        setTimeout(() => {
+          navigate('/login')
+        }, 800);
       }
     })
     
@@ -49,6 +78,16 @@ const Register = () => {
   })
   .catch(err=>{
     console.log(err);
+    if(err){
+      swal(
+        <div>
+          <h1 className=" text-lg font-bold text-red-600">User already exist..</h1>
+          <p>
+          please login !            </p>
+        </div>
+      )
+      
+    }
  
   })
 
