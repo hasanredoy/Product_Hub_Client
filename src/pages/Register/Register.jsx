@@ -5,11 +5,14 @@ import { updateProfile } from "firebase/auth";
 
 import { AuthContext } from "../../authProvider/AuthProvider";
 import usePostImage from "../../hooks/usePostImage";
+import useAxios from "../../hooks/useAxios";
 const Register = () => {
 
   const {createUser ,updateUserProfile} = useContext(AuthContext)
   const [photo,setPhoto]=useState([])
   
+  // get axis hook
+  const axiosHookCommon = useAxios() 
   const imgUrl = usePostImage(photo)
   // console.log(imgUrl);
  const handleRegister=  (e)=>{
@@ -33,6 +36,13 @@ const Register = () => {
       status:"user"
       
     }
+    axiosHookCommon.post('/users',usersData)
+    .then(res=>{
+      console.log(res.data);
+      if(res.data?.insertedId){
+        alert("user created")
+      }
+    })
     
     
     
