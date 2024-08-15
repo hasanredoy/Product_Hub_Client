@@ -9,6 +9,7 @@
   border: 1px solid rgb(249, 167, 249);
   border-bottom: 5px solid rgb(254, 146, 254);
   padding: 6px 15px;
+  font-weight: 600;
   border-radius: 8px;
   display: flex;
   gap: 5px;

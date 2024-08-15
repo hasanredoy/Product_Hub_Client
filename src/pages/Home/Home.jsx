@@ -1,4 +1,4 @@
-import Banner from "../../components/banner/Banner";
+import Banner from "./banner/Banner";
 
 const Home = () => {
   return (
@@ -6,7 +6,6 @@ const Home = () => {
       <section>
         <Banner></Banner>
       </section>
-      this is home
     </div>
   );
 };
