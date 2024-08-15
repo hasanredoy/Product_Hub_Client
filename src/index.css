@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-primary {
+  /* btn bg-[] text-white border-l-4 border-b-4 border-[] */
+  background-color: purple;
+  color: white;
+  border: 1px solid rgb(249, 167, 249);
+  border-bottom: 5px solid rgb(254, 146, 254);
+  padding: 6px 15px;
+  border-radius: 8px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.btn-primary:hover {
+  /* btn bg-[] text-white border-l-4 border-b-4 border-[#2efed8] */
+  background-color: white;
+  color: black;
+}
+
+.text-primary-light{
+  color: rgb(189, 1, 189);
+}
+.text-primary{
+  color: purple;
+}
