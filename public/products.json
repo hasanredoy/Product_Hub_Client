@@ -7,7 +7,8 @@
     "price": 799.99,
     "category": "Electronics",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Apple"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "price": 699.99,
     "category": "Electronics",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Samsung"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "price": 349.99,
     "category": "Electronics",
     "ratings": 4.6,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Sony"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "price": 999.99,
     "category": "Computers",
     "ratings": 4.5,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Dell"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "price": 129.99,
     "category": "Fashion",
     "ratings": 4.4,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Nike"
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "price": 179.99,
     "category": "Fashion",
     "ratings": 4.6,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Adidas"
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "price": 3899.99,
     "category": "Cameras",
     "ratings": 4.9,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Canon"
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "price": 89.99,
     "category": "Home Appliances",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Instant Pot"
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "price": 599.99,
     "category": "Home Appliances",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Dyson"
   },
   {
     "id": 10,
@@ -97,7 +106,8 @@
     "price": 399.99,
     "category": "Home Appliances",
     "ratings": 4.9,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "KitchenAid"
   },
   {
     "id": 11,
@@ -107,7 +117,8 @@
     "price": 149.99,
     "category": "Wearables",
     "ratings": 4.5,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Fitbit"
   },
   {
     "id": 12,
@@ -117,7 +128,8 @@
     "price": 599.99,
     "category": "Wearables",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Garmin"
   },
   {
     "id": 13,
@@ -127,7 +139,8 @@
     "price": 1299.99,
     "category": "Computers",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Apple"
   },
   {
     "id": 14,
@@ -137,7 +150,8 @@
     "price": 1199.99,
     "category": "Computers",
     "ratings": 4.6,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "HP"
   },
   {
     "id": 15,
@@ -147,7 +161,8 @@
     "price": 499.99,
     "category": "Gaming",
     "ratings": 4.9,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Sony"
   },
   {
     "id": 16,
@@ -157,7 +172,8 @@
     "price": 499.99,
     "category": "Gaming",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Microsoft"
   },
   {
     "id": 17,
@@ -167,7 +183,8 @@
     "price": 299.99,
     "category": "Gaming",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Nintendo"
   },
   {
     "id": 18,
@@ -177,226 +194,249 @@
     "price": 299.99,
     "category": "Electronics",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Bose"
   },
   {
     "id": 19,
     "name": "JBL Flip 5",
-    "image": "https://example.com/images/jblflip5.jpg",
+    "image": "https://m.media-amazon.com/images/I/81nT721hWGL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Portable waterproof Bluetooth speaker.",
     "price": 119.99,
     "category": "Electronics",
     "ratings": 4.6,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "JBL"
   },
   {
     "id": 20,
     "name": "GoPro HERO9",
-    "image": "https://example.com/images/goprohero9.jpg",
+    "image": "https://m.media-amazon.com/images/I/61tiPRFJEgL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Action camera with 5K video recording.",
     "price": 399.99,
     "category": "Cameras",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "GoPro"
   },
   {
     "id": 21,
     "name": "Roku Streaming Stick+",
-    "image": "https://example.com/images/rokustickplus.jpg",
+    "image": "https://m.media-amazon.com/images/I/71nulLJ9VmL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "4K streaming device with voice remote.",
     "price": 49.99,
     "category": "Electronics",
     "ratings": 4.5,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Roku"
   },
   {
     "id": 22,
     "name": "Google Nest Hub",
-    "image": "https://example.com/images/googlenesthub.jpg",
+    "image": "https://m.media-amazon.com/images/I/61p+HaIkPCL._AC_SY450_.jpg",
     "description": "Smart display with Google Assistant.",
     "price": 89.99,
     "category": "Electronics",
     "ratings": 4.6,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Google"
   },
   {
     "id": 23,
     "name": "Ring Video Doorbell 3",
-    "image": "https://example.com/images/ringdoorbell3.jpg",
+    "image": "https://m.media-amazon.com/images/I/41NIyY0HflL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Smart doorbell with 1080p HD video.",
     "price": 199.99,
     "category": "Home Security",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Ring"
   },
   {
     "id": 24,
     "name": "Philips Hue Starter Kit",
-    "image": "https://example.com/images/philipshue.jpg",
+    "image": "https://m.media-amazon.com/images/I/61M6mX+pipL._AC_SY450_.jpg",
     "description": "Smart lighting system with color bulbs.",
     "price": 169.99,
     "category": "Home Automation",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Philips"
   },
   {
     "id": 25,
     "name": "Anker PowerCore 20000",
-    "image": "https://example.com/images/ankerpowercore.jpg",
+    "image": "https://m.media-amazon.com/images/I/61Bb6n42VTL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Portable charger with high capacity.",
     "price": 49.99,
     "category": "Electronics",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Anker"
   },
   {
     "id": 26,
     "name": "Apple AirPods Pro",
-    "image": "https://example.com/images/airpodspro.jpg",
+    "image": "https://m.media-amazon.com/images/I/51CPheigS5L.__AC_SY445_SX342_QL70_ML2_.jpg",
     "description": "Wireless earbuds with active noise cancellation.",
     "price": 249.99,
     "category": "Electronics",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Apple"
   },
   {
     "id": 27,
     "name": "Samsung QLED 65\" TV",
-    "image": "https://example.com/images/samsungqledtv.jpg",
+    "image": "https://m.media-amazon.com/images/I/71mpC3rwQcL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "65-inch QLED smart TV with 4K resolution.",
     "price": 1599.99,
     "category": "Electronics",
     "ratings": 4.9,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Samsung"
   },
   {
     "id": 28,
     "name": "HP Envy 15",
-    "image": "https://example.com/images/hpenvy15.jpg",
+    "image": "https://m.media-amazon.com/images/I/71jOP5W7y5L.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "High-performance laptop with Intel i7 processor.",
     "price": 1199.99,
     "category": "Computers",
     "ratings": 4.6,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "HP"
   },
   {
     "id": 29,
     "name": "GoPro HERO10",
-    "image": "https://example.com/images/goprohero10.jpg",
+    "image": "https://m.media-amazon.com/images/I/81ffCXYqQVL.__AC_SY300_SX300_QL70_ML2_.jpg",
     "description": "Latest action camera with advanced features.",
     "price": 499.99,
     "category": "Cameras",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "GoPro"
   },
   {
     "id": 30,
     "name": "Nest Learning Thermostat",
-    "image": "https://example.com/images/nestthermostat.jpg",
+    "image": "https://m.media-amazon.com/images/I/71mQb+Qg6iL._AC_SX569_.jpg",
     "description": "Smart thermostat with learning capabilities.",
     "price": 249.99,
     "category": "Home Automation",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Nest"
   },
   {
     "id": 31,
     "name": "iRobot Roomba i7+",
-    "image": "https://example.com/images/irobotroomba.jpg",
+    "image": "https://m.media-amazon.com/images/I/61XdwuJE3TL.__AC_SY300_SX300_QL70_ML2_.jpg",
     "description": "Robot vacuum with automatic dirt disposal.",
     "price": 799.99,
     "category": "Home Appliances",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "iRobot"
   },
   {
     "id": 32,
     "name": "Razer BlackWidow V3",
-    "image": "https://example.com/images/razerblackwidow.jpg",
+    "image": "https://m.media-amazon.com/images/I/71l-ZWpTmNL.__AC_SY300_SX300_QL70_ML2_.jpg",
     "description": "Mechanical gaming keyboard with RGB lighting.",
     "price": 139.99,
     "category": "Gaming",
     "ratings": 4.6,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Razer"
   },
   {
     "id": 33,
     "name": "Oculus Quest 2",
-    "image": "https://example.com/images/oculusquest2.jpg",
+    "image": "https://m.media-amazon.com/images/I/512qcHnH1lL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Standalone VR headset with 256GB storage.",
     "price": 399.99,
     "category": "Gaming",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Oculus"
   },
   {
     "id": 34,
     "name": "Sony WH-1000XM5",
-    "image": "https://example.com/images/sonywh1000xm5.jpg",
+    "image": "https://m.media-amazon.com/images/I/61BP0d2-0AL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Latest noise-canceling headphones with improved sound.",
     "price": 399.99,
     "category": "Electronics",
     "ratings": 4.9,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Sony"
   },
   {
     "id": 35,
     "name": "Bose SoundLink Revolve",
-    "image": "https://example.com/images/bosesoundlinkrevolve.jpg",
+    "image": "https://m.media-amazon.com/images/I/61A+Tp1TgML._AC_SY879_.jpgg",
     "description": "Portable Bluetooth speaker with 360-degree sound.",
     "price": 199.99,
     "category": "Electronics",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Bose"
   },
   {
     "id": 36,
     "name": "Philips Sonicare DiamondClean",
-    "image": "https://example.com/images/philipsdentalclean.jpg",
+    "image": "https://m.media-amazon.com/images/I/61e8MUAVG-L.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Electric toothbrush with superior cleaning technology.",
     "price": 249.99,
     "category": "Health",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Philips"
   },
   {
     "id": 37,
     "name": "iPad Pro 12.9\"",
-    "image": "https://example.com/images/ipadpro129.jpg",
+    "image": "https://m.media-amazon.com/images/I/814P0ojHArL.__AC_SY445_SX342_QL70_ML2_.jpg",
     "description": "Powerful tablet with M2 chip and 12.9-inch display.",
     "price": 1099.99,
     "category": "Electronics",
     "ratings": 4.8,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Apple"
   },
   {
     "id": 38,
     "name": "Jabra Elite 85t",
-    "image": "https://example.com/images/jabraelite85t.jpg",
+    "image": "https://m.media-amazon.com/images/I/81sOW3KB1NL.__AC_SY300_SX300_QL70_ML2_.jpg",
     "description": "True wireless earbuds with active noise cancellation.",
     "price": 229.99,
     "category": "Electronics",
     "ratings": 4.6,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Jabra"
   },
   {
     "id": 39,
     "name": "MSI GeForce RTX 3080",
-    "image": "https://example.com/images/msigeforce3080.jpg",
+    "image": "https://m.media-amazon.com/images/I/71tduSp8ooL.__AC_SY300_SX300_QL70_ML2_.jpg",
     "description": "High-performance graphics card for gaming and rendering.",
     "price": 699.99,
     "category": "Computers",
     "ratings": 4.9,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "MSI"
   },
   {
     "id": 40,
     "name": "Logitech MX Master 3",
-    "image": "https://example.com/images/logitechmxmaster3.jpg",
+    "image": "https://m.media-amazon.com/images/I/61ni3t1ryQL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Advanced wireless mouse with customizable buttons.",
     "price": 99.99,
     "category": "Computers",
     "ratings": 4.7,
-    "createdAt": "2024-08-14T15:32:01Z"
+    "createdAt": "2024-08-14T15:32:01Z",
+    "brand": "Logitech"
   }
 ]
