@@ -2,8 +2,12 @@ import { useQuery } from "@tanstack/react-query";
 import Banner from "./banner/Banner";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import Cards from "./card/Cards";
+import { useState } from "react";
+import Pagination from "../../components/custom/Pagination";
 
 const Home = () => {
+  // page state 
+  const [currentPage,setCurrentPage]=useState(0)
 // get axios secure 
 const axiosHook =useAxiosSecure()
 
@@ -99,6 +103,11 @@ const axiosHook =useAxiosSecure()
       <section className="w-[93%]  my-10 lg:w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {products?.map(data=><Cards key={data?._id} data={data}></Cards>)}    
       </section>
+      {/* pagination section  */}
+      <section className="w-[93%]  my-10 lg:w-[85%] mx-auto ">
+        <Pagination count={40} itemsCount={9} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+      </section>
+
     </div>
   );
 };
