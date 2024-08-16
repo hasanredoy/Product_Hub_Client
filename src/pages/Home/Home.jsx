@@ -18,6 +18,13 @@ const axiosHook =useAxiosSecure()
       console.log( res.data);
       return res.data
     }  })
+  const {data:count=0}=useQuery({
+    queryKey:['products count '],
+    queryFn:async()=>{
+      const res = await axiosHook.get('/products-count')
+      console.log( res.data);
+      return res.data?.count
+    }  })
 
     console.log(products);
   return (
@@ -105,7 +112,7 @@ const axiosHook =useAxiosSecure()
       </section>
       {/* pagination section  */}
       <section className="w-[93%]  my-10 lg:w-[85%] mx-auto ">
-        <Pagination count={40} itemsCount={9} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+        <Pagination count={count} itemsCount={9} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </section>
 
     </div>

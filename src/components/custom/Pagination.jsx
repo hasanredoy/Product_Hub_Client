@@ -33,7 +33,7 @@ const Pagination = ({setCurrentPage,currentPage,itemsCount,count}) => {
             <button
             onClick={() => setCurrentPage(page)}
             className={` btn ${
-              currentPage === page && "btn-warning text-white font-bold "
+              currentPage === page && "btn bg-purple-600 text-white font-bold "
             } `}
             key={page}
           >
