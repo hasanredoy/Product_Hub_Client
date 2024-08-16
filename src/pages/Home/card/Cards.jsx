@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
+import moment from 'moment'
 
 const Cards = ({data}) => {
   return (
@@ -12,10 +13,14 @@ const Cards = ({data}) => {
       </h2>
       <div className="divider"></div>
       <figure className=" bg-white px-2 w-full">
-        <img className=" h-[100px]" src={data?.image} alt="Shoes" />
+        <img className=" h-[100px]" src={data?.image} alt={data?.name} />
       </figure>
+      <div className=" px-5 pt-5 flex justify-between w-full">
+      <p className=" font-bold">{data?.brand}</p>
+      <p className=" font-bold text-green-600">{moment(data?.createdAt).startOf("minutes").fromNow() }</p>
+      </div>
       <div className="card-body">
-        <p className=" font-bold">{data?.brand}</p>
+     
         <p className="my-3">Category: <span className=" font-bold">{data?.category}</span></p>
         <p className=" text-sm">
           {data?.description}

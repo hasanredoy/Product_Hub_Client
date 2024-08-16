@@ -11,27 +11,35 @@ const Home = () => {
   const [brand , setBrand]=useState('')
   const [category , setCategory]=useState('')
   const [price , setPrice]=useState('1,10000')
+  const [search , setSearch] = useState('')
+  const [sort , setSort] = useState('')
 
-  console.log(price?.split(',')[0]);
+  console.log(search);
+
+const handleSearch =(e)=>{
+  e.preventDefault()
+  setSearch(e.target?.search?.value)
+}
+
 // get axios secure 
 const axiosHook =useAxiosSecure()
 
-  const {data:products=[]}=useQuery({
-    queryKey:['products ',currentPage,category,brand,price],
+  const {data:products=[],isFetching}=useQuery({
+    queryKey:['products ',currentPage,category,brand,price,search,sort],
     queryFn:async()=>{
-      const res = await axiosHook.get(`/products?page=${currentPage}&size=${9}&category=${category}&brand=${brand}&minPrice=${price?.split(',')[0]}&maxPrice=${price?.split(',')[1]}`)
-      console.log( res.data);
+      const res = await axiosHook.get(`/products?page=${currentPage}&size=${9}&category=${category}&brand=${brand}&minPrice=${price?.split(',')[0]}&maxPrice=${price?.split(',')[1]}&search=${search}&sort=${sort}`)
+      // console.log( res.data);
       return res.data
     }  })
   const {data:count=0}=useQuery({
     queryKey:['products count '],
     queryFn:async()=>{
       const res = await axiosHook.get('/products-count')
-      console.log( res.data);
+      // console.log( res.data);
       return res.data?.count
     }  })
 
-    console.log(products);
+    // console.log(products);
   return (
     <div>
       <section>
@@ -93,37 +101,41 @@ const axiosHook =useAxiosSecure()
           </section>
           {/* search inp  */}
           <div className="flex-1 mx-5 ">
-            <div>
+            <form onSubmit={handleSearch}>
               <div className=" relative">
                 <input
+                name="search"
                   className="input w-full border-purple-400 shadow-lg input-bordered "
                   placeholder="Search"
                 />
-                <button className="btn bg-purple-700 text-white hover:text-black border-purple-400 border-l-0 top-0 right-0 absolute  join-item">
+                <button type="submit" className="btn bg-purple-700 text-white hover:text-black border-purple-400 border-l-0 top-0 right-0 absolute  join-item">
                   Search
                 </button>
               </div>
-            </div>
+            </form>
           </div>
           {/* sort section  */}
           {/* filter 3 price range  */}
-          <select  className="select font-bold border-purple-500 shadow-md select-bordered join-item">
+          <select  onChange={(e)=>setSort(e.target.value)} className="select font-bold border-purple-500 shadow-md select-bordered join-item">
             <option className=" font-bold" disabled selected>
               <span className=" font-bold">Sort</span>
             </option>
-            <option>Low To High</option>
-            <option>High to Low </option>
-            <option>Newest</option>
+            <option value={'low'}>Low To High</option>
+            <option value={'high'}>High to Low </option>
+            <option value={'new'}>Newest</option>
           </select>
         </section>
       </section>
       {/* cards section  */}
       <section className="w-[93%]  my-10 lg:w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {products?.map(data=><Cards key={data?._id} data={data}></Cards>)}    
+        
       </section>
+      {isFetching&&<div className=" flex justify-center items-center w-[calc(100dvh-200px)]"> <span className=" loading-spinner "></span></div>}
+      {category&&brand&&products?.length<1&&<div><h1 className="text-xl font-bold text-center">No Data Found</h1></div>}
       {/* pagination section  */}
       <section className="w-[93%]  my-10 lg:w-[85%] mx-auto ">
-        <Pagination count={count} itemsCount={9} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+        {category&&brand&&products?.length<1||<Pagination count={count} itemsCount={9} currentPage={currentPage} setCurrentPage={setCurrentPage}/>}
       </section>
 
     </div>
