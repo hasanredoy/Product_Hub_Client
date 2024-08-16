@@ -10,14 +10,14 @@ const Home = () => {
   const [currentPage,setCurrentPage]=useState(0)
   const [brand , setBrand]=useState('')
   const [category , setCategory]=useState('')
-  const [price , setPrice]=useState('1,100')
+  const [price , setPrice]=useState('1,10000')
 
   console.log(price?.split(',')[0]);
 // get axios secure 
 const axiosHook =useAxiosSecure()
 
   const {data:products=[]}=useQuery({
-    queryKey:['products ',currentPage],
+    queryKey:['products ',currentPage,category,brand,price],
     queryFn:async()=>{
       const res = await axiosHook.get(`/products?page=${currentPage}&size=${9}&category=${category}&brand=${brand}&minPrice=${price?.split(',')[0]}&maxPrice=${price?.split(',')[1]}`)
       console.log( res.data);
@@ -60,6 +60,7 @@ const axiosHook =useAxiosSecure()
               <option value={'Philips'}>Philips</option>
               <option value={'Dell'}>Dell</option>
               <option value={'Nike'}>Nike </option>
+              <option value={''}>Clear all </option>
             </select>
 
             {/* filter 2 category name  */}
@@ -74,6 +75,8 @@ const axiosHook =useAxiosSecure()
               <option value={'Cameras'}>Cameras</option>
               <option value={'Home  Appliances'}> Home Appliances</option>
               <option value={'Health'}> Health </option>
+              <option value={''}>Clear all </option>
+
             </select>
             {/* filter 3 price range  */}
             <select name="price" onChange={(e)=>setPrice(e.target?.value)} className="select font-bold select-bordered border-purple-600 shadow-md join-item">
@@ -84,6 +87,8 @@ const axiosHook =useAxiosSecure()
               <option value={[100,200]}>100-200 $</option>
               <option value={[200,500]}>200-500 $</option>
               <option value={[500,5000]}>500-5000 $</option>
+              <option value={''}>Clear all </option>
+
             </select>
           </section>
           {/* search inp  */}
