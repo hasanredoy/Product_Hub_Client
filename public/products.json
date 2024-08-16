@@ -38,7 +38,7 @@
     "image": "https://m.media-amazon.com/images/I/71LbBclRNzL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Ultra-thin laptop with Intel i7 processor.",
     "price": 999.99,
-    "category": "Computers",
+    "category": "Electronics",
     "ratings": 4.5,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "Dell"
@@ -71,7 +71,7 @@
     "image": "https://bhmstore.com/5742-medium_default/canon-eos-5d-mark-iv-dslr-camera-with-24-105.jpg",
     "description": "Professional mirrorless camera.",
     "price": 3899.99,
-    "category": "Cameras",
+    "category": "Electronics",
     "ratings": 4.9,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "Canon"
@@ -137,7 +137,7 @@
     "image": "https://m.media-amazon.com/images/I/61CHqS31PiL._AC_SX466_.jpg",
     "description": "Powerful laptop with M1 chip.",
     "price": 1299.99,
-    "category": "Computers",
+    "category": "Electronics",
     "ratings": 4.8,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "Apple"
@@ -148,7 +148,7 @@
     "image": "https://m.media-amazon.com/images/I/61nNXZAyupL.__AC_SY300_SX300_QL70_ML2_.jpg",
     "description": "Convertible laptop with touch screen.",
     "price": 1199.99,
-    "category": "Computers",
+    "category": "Electronics",
     "ratings": 4.6,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "HP"
@@ -214,7 +214,7 @@
     "image": "https://m.media-amazon.com/images/I/61tiPRFJEgL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Action camera with 5K video recording.",
     "price": 399.99,
-    "category": "Cameras",
+    "category": "Electronics",
     "ratings": 4.7,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "GoPro"
@@ -258,7 +258,7 @@
     "image": "https://m.media-amazon.com/images/I/61M6mX+pipL._AC_SY450_.jpg",
     "description": "Smart lighting system with color bulbs.",
     "price": 169.99,
-    "category": "Home Automation",
+    "category": "Home Appliances",
     "ratings": 4.8,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "Philips"
@@ -302,7 +302,7 @@
     "image": "https://m.media-amazon.com/images/I/71jOP5W7y5L.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "High-performance laptop with Intel i7 processor.",
     "price": 1199.99,
-    "category": "Computers",
+    "category": "Electronics",
     "ratings": 4.6,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "HP"
@@ -313,7 +313,7 @@
     "image": "https://m.media-amazon.com/images/I/81ffCXYqQVL.__AC_SY300_SX300_QL70_ML2_.jpg",
     "description": "Latest action camera with advanced features.",
     "price": 499.99,
-    "category": "Cameras",
+    "category": "Electronics",
     "ratings": 4.8,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "GoPro"
@@ -324,7 +324,7 @@
     "image": "https://m.media-amazon.com/images/I/71mQb+Qg6iL._AC_SX569_.jpg",
     "description": "Smart thermostat with learning capabilities.",
     "price": 249.99,
-    "category": "Home Automation",
+    "category": "Home Appliances",
     "ratings": 4.7,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "Nest"
@@ -423,7 +423,7 @@
     "image": "https://m.media-amazon.com/images/I/71tduSp8ooL.__AC_SY300_SX300_QL70_ML2_.jpg",
     "description": "High-performance graphics card for gaming and rendering.",
     "price": 699.99,
-    "category": "Computers",
+    "category": "Electronics",
     "ratings": 4.9,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "MSI"
@@ -434,7 +434,7 @@
     "image": "https://m.media-amazon.com/images/I/61ni3t1ryQL.__AC_SX300_SY300_QL70_ML2_.jpg",
     "description": "Advanced wireless mouse with customizable buttons.",
     "price": 99.99,
-    "category": "Computers",
+    "category": "Electronics",
     "ratings": 4.7,
     "createdAt": "2024-08-14T15:32:01Z",
     "brand": "Logitech"
