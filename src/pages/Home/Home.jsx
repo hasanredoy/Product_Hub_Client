@@ -1,6 +1,21 @@
+import { useQuery } from "@tanstack/react-query";
 import Banner from "./banner/Banner";
+import useAxiosSecure from "../../hooks/useAxiosSecure";
+import Cards from "./card/Cards";
 
 const Home = () => {
+// get axios secure 
+const axiosHook =useAxiosSecure()
+
+  const {data:products=[]}=useQuery({
+    queryKey:['products '],
+    queryFn:async()=>{
+      const res = await axiosHook.get('/products')
+      console.log( res.data);
+      return res.data
+    }  })
+
+    console.log(products);
   return (
     <div>
       <section>
@@ -79,6 +94,10 @@ const Home = () => {
             <option>Newest</option>
           </select>
         </section>
+      </section>
+      {/* cards section  */}
+      <section className="w-[93%]  my-10 lg:w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {products?.map(data=><Cards key={data?._id} data={data}></Cards>)}    
       </section>
     </div>
   );
