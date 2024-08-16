@@ -8,13 +8,18 @@ import Pagination from "../../components/custom/Pagination";
 const Home = () => {
   // page state 
   const [currentPage,setCurrentPage]=useState(0)
+  const [brand , setBrand]=useState('')
+  const [category , setCategory]=useState('')
+  const [price , setPrice]=useState('1,100')
+
+  console.log(price?.split(',')[0]);
 // get axios secure 
 const axiosHook =useAxiosSecure()
 
   const {data:products=[]}=useQuery({
     queryKey:['products ',currentPage],
     queryFn:async()=>{
-      const res = await axiosHook.get(`/products?page=${currentPage}&size=${9}`)
+      const res = await axiosHook.get(`/products?page=${currentPage}&size=${9}&category=${category}&brand=${brand}&minPrice=${price?.split(',')[0]}&maxPrice=${price?.split(',')[1]}`)
       console.log( res.data);
       return res.data
     }  })
@@ -40,6 +45,7 @@ const axiosHook =useAxiosSecure()
             {/* filter 1 brand name  */}
             <select
               name="brand"
+              onChange={(e)=>setBrand(e.target?.value)}
               className="select select-bordered font-bold border-purple-600 shadow-md join-item"
             >
               <option disabled selected>
@@ -57,7 +63,7 @@ const axiosHook =useAxiosSecure()
             </select>
 
             {/* filter 2 category name  */}
-            <select name="category" className="select select-bordered border-purple-600 font-bold shadow-md join-item">
+            <select name="category" onChange={(e)=>setCategory(e.target?.value)} className="select select-bordered border-purple-600 font-bold shadow-md join-item">
               <option disabled selected>
                 Category
               </option>
@@ -70,14 +76,14 @@ const axiosHook =useAxiosSecure()
               <option value={'Health'}> Health </option>
             </select>
             {/* filter 3 price range  */}
-            <select name="price" className="select font-bold select-bordered border-purple-600 shadow-md join-item">
+            <select name="price" onChange={(e)=>setPrice(e.target?.value)} className="select font-bold select-bordered border-purple-600 shadow-md join-item">
               <option disabled selected>
                 Price Range
               </option>
-              <option value={'100'} >1-100 $</option>
-              <option value={'200'}>100-200 $</option>
-              <option value={'500'}>200-500 $</option>
-              <option value={'5000'}>500-5000 $</option>
+              <option value={[1,100]} >1-100 $</option>
+              <option value={[100,200]}>100-200 $</option>
+              <option value={[200,500]}>200-500 $</option>
+              <option value={[500,5000]}>500-5000 $</option>
             </select>
           </section>
           {/* search inp  */}
