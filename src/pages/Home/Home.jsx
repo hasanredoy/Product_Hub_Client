@@ -12,9 +12,9 @@ const Home = () => {
 const axiosHook =useAxiosSecure()
 
   const {data:products=[]}=useQuery({
-    queryKey:['products '],
+    queryKey:['products ',currentPage],
     queryFn:async()=>{
-      const res = await axiosHook.get('/products')
+      const res = await axiosHook.get(`/products?page=${currentPage}&size=${9}`)
       console.log( res.data);
       return res.data
     }  })
