@@ -1,8 +1,37 @@
-# React + Vite
+## Welcome To Product Hub Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Product Hub is a web application where user can lookup for favorite item . In this website user can categorize products based on different condition , user can search for their favorite product and user can sort products based on different condition. This website also have pagination.
+</br>
+For more please visit [Product Hub](https://product-hub-e9ca3.web.app/)
 
-Currently, two official plugins are available:
+## Get Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.  Clone This project
+
+            $ git clone https://github.com/hasanredoy/Product_Hub_Client.git
+
+2.  Place all environment variables
+    </br>
+    VITE_APIKEY </br>
+    VITE_AUTHDOMAIN </br>
+    VITE_PROJECTID </br>
+    VITE_STORAGEBUCKET </br>
+    VITE_MESSAGINGSENDERID </br>
+    VITE_APPID
+    
+    VITE_IMAGE_HOSTING_API_KEY
+
+3. Install all dependency 
+
+         $ npm install
+
+4. Finally run the project 
+
+        $ npm run dev
+
+
+
+#### Visit Server side repository 
+
+[Product Hub server](https://github.com/hasanredoy/Product_Hub_Server
+)
