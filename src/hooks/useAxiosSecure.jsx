@@ -1,6 +1,7 @@
 import axios from "axios";
 const axiosHook = axios.create({
-  baseURL:'http://localhost:5000'
+  baseURL:'https://product-hub-server-ten.vercel.app',
+
 })
 
 const useAxiosSecure = () => {
