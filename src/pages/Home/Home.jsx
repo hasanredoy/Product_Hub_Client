@@ -47,9 +47,9 @@ const axiosHook =useAxiosSecure()
       </section>
       {/* functionality section  */}
       <section className=" bg-primary bg-opacity-10 py-1">
-        <section className="  w-[93%] flex lg:gap-10 justify-between lg:w-[85%] mx-auto my-5">
+        <section className="  w-[90%] flex flex-col lg:flex-row gap-5  lg:gap-10 justify-between lg:w-[85%] mx-auto my-5">
           {/* filter sect  */}
-          <section className=" flex gap-5">
+          <section className=" grid grid-cols-2 lg:grid-cols-3 lg:flex-row  flex-col gap-5">
             {/* filter 1 brand name  */}
             <select
               name="brand"
@@ -98,6 +98,15 @@ const axiosHook =useAxiosSecure()
               <option value={''}>Clear all </option>
 
             </select>
+
+            <select  onChange={(e)=>setSort(e.target.value)} className="select font-bold lg:hidden block border-purple-500 shadow-md select-bordered join-item">
+            <option className=" font-bold" disabled selected>
+              <span className=" font-bold">Sort</span>
+            </option>
+            <option value={'low'}>Low To High</option>
+            <option value={'high'}>High to Low </option>
+            <option value={'new'}>Newest</option>
+          </select>
           </section>
           {/* search inp  */}
           <div className="flex-1 mx-5 ">
@@ -115,8 +124,7 @@ const axiosHook =useAxiosSecure()
             </form>
           </div>
           {/* sort section  */}
-          {/* filter 3 price range  */}
-          <select  onChange={(e)=>setSort(e.target.value)} className="select font-bold border-purple-500 shadow-md select-bordered join-item">
+          <select  onChange={(e)=>setSort(e.target.value)} className="select font-bold hidden lg:block border-purple-500 shadow-md select-bordered join-item">
             <option className=" font-bold" disabled selected>
               <span className=" font-bold">Sort</span>
             </option>

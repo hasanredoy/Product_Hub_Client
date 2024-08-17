@@ -24,7 +24,7 @@ const Pagination = ({setCurrentPage,currentPage,itemsCount,count}) => {
     }
   };
   return (
-    <div className=" min-w-full flex justify-center gap-5 my-5  p-5">
+    <div className=" min-w-full grid grid-cols-4 lg:flex justify-center gap-5 my-5  p-5">
         <button onClick={handlePrev} className=" btn">
           <FaLessThan></FaLessThan>
         </button>
@@ -40,6 +40,7 @@ const Pagination = ({setCurrentPage,currentPage,itemsCount,count}) => {
             {page + 1}
           </button>
         ))}
+            <div></div>
         <button onClick={handleNext} className=" btn">
           <FaGreaterThan></FaGreaterThan>
         </button>

@@ -67,8 +67,8 @@ const handleLogout=()=>{
   </div>
   <div className="navbar-end">
     {user?<div className=" flex gap-6">
-      <div className="avatar online">
-  <div className="w-10 rounded-full">
+      <div className="avatar lg:block hidden online">
+  <div className="w-10  rounded-full">
     <img src={user?.photoURL} />
   </div>
 </div>
