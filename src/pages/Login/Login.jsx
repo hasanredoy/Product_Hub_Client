@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../authProvider/AuthProvider";
 import GoogleLogin from "../../socialLogin/GoogleLogin";
+import swal from "sweetalert";
+
 
 const Login = () => {
   const { loginUser,resetPass} = useContext(AuthContext);
@@ -22,10 +24,12 @@ const Login = () => {
 
     loginUser(email, password)
       .then((res) => {
+        swal('logged in ',{icon:"success"})
         navigate(path)
         // console.log(res.user)
+        
       })
-      .catch((err) => console.log(err));
+      .catch((err) => swal('something went wrong please try again ',{icon:"error"}));
   };
  
 
@@ -43,6 +47,7 @@ const Login = () => {
 
   return (
     <div className=" min-h-screen">
+      <title>Login | Product Hub</title>
   
       {
         modal||<div className={" w-[95%] lg:w-[90%] mx-auto my-10   flex flex-col-reverse lg:flex-row  items-center mt-3 lg:mt-20"}>

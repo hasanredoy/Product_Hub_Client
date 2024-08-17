@@ -2,33 +2,35 @@ import { FcGoogle } from "react-icons/fc";
 
 import { useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
-import useAxiosSecure from "../hooks/useAxiosSecure";
+import useAxios from "../hooks/useAxios";
+import swal from "sweetalert";
 
 const GoogleLogin = () => {
-  const {googleLogin}=useAuth()
-  const axiosHook = useAxiosSecure()
+  const {signInWithGoogle}=useAuth()
+  const axiosHookCommon = useAxios()
   const navigate = useNavigate()
   const location= useLocation()
   const path = location.state || '/';
 
   const handleGoogleLogin = ()=>{
-    googleLogin()
+    signInWithGoogle()
     .then(res=>{
-      // console.log(res.user);
+      console.log(res.user);
       const userData = {
         name:res?.user?.displayName,
         email:res?.user?.email,
         photo:res?.user?.photoURL,
         status:"user"
       }
-      axiosCommon.post("/users",userData)
+      axiosHookCommon.post("/users",userData)
       .then(res=>{
-        // console.log(res.data);
+        console.log(res.data);
+        swal('Logged in',{icon:'success'})
         navigate(path)
       })
     })
     .catch(err=>{
-      console.log(err.user);      
+      swal('something went wrong please try again ',{icon:"error"})     
     })
   }
   return (
