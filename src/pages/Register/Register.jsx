@@ -97,8 +97,8 @@ const Register = () => {
   return (
     <div className="min-h-[calc(100vh-116px)] flex items-center  relative">
       {/* form div */}
-      <div className={` shrink-0 w-full max-w-xl lg:p-10  shadow-2xl  mx-auto my-5  bg-base-300 bg-opacity-30`}>
-      <h1 className=" text-xl my-3 text-center font-bold pt-3"> Register in <span className=" text-primary-light">Product Hub</span> web! !</h1>
+      <div className={`  p-5   shrink-0 w-full max-w-xl lg:p-10  shadow-2xl  mx-auto my-5  bg-base-300 bg-opacity-30`}>
+      <h1 className=" text-xl my-3 text-center font-bold pt-3"> Register in <span className=" text-primary-light">Product Hub</span> web!</h1>
 
     <form onSubmit={handleRegister} className="">
 
